@@ -46,9 +46,9 @@ header, section {
 }
 
 .projects img {
-  max-width: 200px;
+  width: 200px;
 }
 
 .links img {
-  max-width: 75px;
+  width: 75px;
 }
