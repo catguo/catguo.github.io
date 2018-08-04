@@ -4,7 +4,42 @@
 }
 
 body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  font-size: 20px;
+}
+
+nav a {
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.nav-container {
+  display: flex;
+}
+
+h2, p, li, img {
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  font-size: 18px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
