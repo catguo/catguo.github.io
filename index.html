@@ -3,33 +3,65 @@
 <head>
 	<title>Catherine Guo</title>
 	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 	<nav>
 	  <ul class="nav-container">
-	    <li><a href="#">About</a></li>
-	    <li><a href="#">Projects</a></li>
-	    <li><a href="#">Follow Me</a></li>
+	    <li><a href="#about">About</a></li>
+	    <li><a href="#skills">Skills</a></li>
+	    <li><a href="#projects">Projects</a></li>
+	    <li><a href="#">Connect</a></li>
 	  </ul>
 	</nav>
 	<header>
-		<h1>Hi there! 👋</h1>
-		<img src="images/Pusheen_laptop.gif" alt="Pusheen the cat typing on a laptop">
-		<p>I'm Catherine and I'm currently a web development student at General Assembly. I love using code to build cool things.</p>
+		<div class="header-container" id="about">
+			<img class="profile-pic" src="images/profile-pic.jpg" alt="Photo of Catherine">
+			<h1>Hi there! 👋</h1>
+			<p>I'm Catherine and I'm currently a web development student at General Assembly. I love using code to build cool things.</p>
+		</div>
 	</header>
+	<section class="skills">
+		<div class="skills-container">
+			<h2 id="skills">Skills</h2>
+				<ul>
+					<li>JavaScript</li>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Bootstrap</li>
+					<li>jQuery</li>
+					<li>Ruby on Rails</li>
+					<li>AJAX</li>
+					<li>PostgreSQL</li>
+					<li>GitHub</li>
+				</ul>
+		</div>
+	</section>
 	<section class="projects">
-		<h2 id="projects">Projects</h2>
-		<img src="images/Regal_Tiger.jpg" alt="My handsome cat named Tiger">
-		<p>For now, I am using a picture of my handsome cat, Tiger, as a placeholder for the awesome projects that will go here.</p>
+		<div class="projects-container">
+			<h2 id="projects">Projects</h2>
+			<div class="row project-3">
+				<div class="col-sm-4">
+					<img class="handsome-cat" src="images/Regal_Tiger.jpg" alt="My handsome cat named Tiger">
+				</div>
+				<div class="col-sm-8">
+					<p>For now, I am using a picture of my handsome cat, Tiger, as a placeholder for the awesome projects that will go here.</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section class="links">
-		<h2>Follow Me</h2>
+		<h2>Let's Connect!</h2>
 			<div class="links-container">
 				<a href="https://github.com/catguo" target="_blank"><img src="images/iconmonstr-github-3-240.png" alt="Github logo"></a>
 				<a href="https://www.linkedin.com/in/catherineguo/" target="_blank"><img src="images/iconmonstr-linkedin-3-240.png" alt="LinkedIn logo"></a>
 			</div>
 	</section>
+	<img src="images/Pusheen_laptop.gif" alt="Pusheen the cat typing on a laptop">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
