@@ -10,23 +10,22 @@
 </head>
 <body>
 	<nav>
-	  <ul class="nav-container">
+	  <ul class="nav-links">
 	    <li><a href="#about">About</a></li>
 	    <li><a href="#skills">Skills</a></li>
-	    <li><a href="#projects">Projects</a></li>
-	    <li><a href="#">Connect</a></li>
+	    <li><a href="#portfolio">Portfolio</a></li>
+	    <li><a href="#connect">Connect</a></li>
 	  </ul>
 	</nav>
-	<header>
-		<div class="header-container" id="about">
-			<img class="profile-pic" src="images/profile-pic.jpg" alt="Photo of Catherine">
-			<h1>Hi there! 👋</h1>
-			<p>I'm Catherine and I'm currently a web development student at General Assembly. I love using code to build cool things.</p>
-		</div>
+	<header class="header-container" id="about">
+		<img class="profile-pic" src="images/profile-pic.jpg" alt="Photo of Catherine">
+		<h1>Hi there! 👋</h1>
+		<p>I'm Catherine and I'm currently a web development student at General Assembly. I love using code to build cool things.</p>
+		<button class="btn btn-secondary" type="button" name="button">View My Resume</button>
 	</header>
-	<section class="skills">
+	<section class="skills" id="skills">
 		<div class="skills-container">
-			<h2 id="skills">Skills</h2>
+			<h2>Skills</h2>
 				<ul>
 					<li>JavaScript</li>
 					<li>HTML5</li>
@@ -40,29 +39,38 @@
 				</ul>
 		</div>
 	</section>
-	<section class="projects">
-		<div class="projects-container">
-			<h2 id="projects">Projects</h2>
-			<div class="row project-3">
-				<div class="col-sm-4">
-					<img class="handsome-cat" src="images/Regal_Tiger.jpg" alt="My handsome cat named Tiger">
-				</div>
-				<div class="col-sm-8">
-					<p>For now, I am using a picture of my handsome cat, Tiger, as a placeholder for the awesome projects that will go here.</p>
-				</div>
+	<section class="projects-container" id="portfolio">
+		<h2>Portfolio</h2>
+		<div class="row project">
+			<div class="project-img col-md-4">
+				<img class="handsome-cat" src="images/Regal_Tiger.jpg" alt="My handsome cat named Tiger">
+			</div>
+			<div class="project-text col-md-8">
+				<h3>Project 2</h3>
+				<p>For now, I am using a picture of my handsome cat, Tiger, as a placeholder for the awesome projects that will go here.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="project-img col-md-4">
+				<img class="handsome-cat" src="images/Regal_Tiger.jpg" alt="My handsome cat named Tiger">
+			</div>
+			<div class="project-text col-md-8">
+				<h3>Tic Tac Toe</h3>
+				<p>For now, I am using a picture of my handsome cat, Tiger, as a placeholder for the awesome projects that will go here.</p>
 			</div>
 		</div>
 	</section>
-	<section class="links">
+	<section class="links" id="connect">
 		<h2>Let's Connect!</h2>
-			<div class="links-container">
-				<a href="https://github.com/catguo" target="_blank"><img src="images/iconmonstr-github-3-240.png" alt="Github logo"></a>
-				<a href="https://www.linkedin.com/in/catherineguo/" target="_blank"><img src="images/iconmonstr-linkedin-3-240.png" alt="LinkedIn logo"></a>
-			</div>
+		<div class="links-container">
+			<a href="https://github.com/catherineguo" target="_blank"><img src="images/iconmonstr-github-3-240.png" alt="Github logo"></a>
+			<a href="https://www.linkedin.com/in/catherineguo/" target="_blank"><img src="images/iconmonstr-linkedin-3-240.png" alt="LinkedIn logo"></a>
+		</div>
+		<img src="images/Pusheen_laptop.gif" alt="Pusheen the cat typing on a laptop">
 	</section>
-	<img src="images/Pusheen_laptop.gif" alt="Pusheen the cat typing on a laptop">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
