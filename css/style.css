@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,9 @@ body {
 }
 
 nav {
+  font-family: 'Montserrat';
   font-size: 18px;
-  background-color: #e7e6e4;
+  background-color: #f0f0ee;
   width: 100%;
 }
 
@@ -18,7 +19,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: pink;
+  color: #ffc0cb;
 }
 
 nav ul {
@@ -46,31 +47,33 @@ nav li {
 
 .profile-pic {
   max-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .header-container p {
   font-size: 18px;
   max-width: 600px;
+  margin-bottom: 40px;
 }
 
 .skills {
-  background-color: #e7e6e4;
+  background-color: #f0f0ee;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .skills-container {
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .skills-container ul {
+  font-family: 'Montserrat';
   list-style-type: none;
   padding: 0;
   margin-top: 10px;
@@ -81,7 +84,7 @@ nav li {
   font-size: 18px;
   padding: 10px;
   margin: 10px;
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 
 .projects-container {
@@ -95,7 +98,7 @@ nav li {
 }
 
 .projects-container img {
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -107,12 +110,23 @@ nav li {
   border: #e7e6e4 solid 1px;
 }
 
+.project a {
+  color: #ff8da1;
+}
+
+.project a:hover {
+  color: #6c757d;
+}
+
 .project-img,
 .project-text {
   margin: 20px 0;
 }
 
 .project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
 }
 
@@ -131,4 +145,20 @@ nav li {
 
 .links-container img {
   width: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  nav li {
+    padding: 10px 5px;
+    margin: 10px 5px;
+  }
+
+  .skills-container {
+    height: 55vh;
+  }
+
+  .project-text p,
+  .project-text h3 {
+    margin: 0 20px 20px;
+  }
 }
