@@ -1,5 +1,8 @@
 body {
+  color: #2f2f2f;
   font-family: 'Open Sans', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.5;
   background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
@@ -7,8 +10,6 @@ body {
 }
 
 nav {
-  font-family: 'Montserrat';
-  font-size: 18px;
   background-color: #f0f0ee;
   width: 100%;
 }
@@ -32,17 +33,18 @@ nav ul {
 }
 
 nav li {
+  font-family: 'Montserrat';
+  font-size: 18px;
   padding: 10px;
   margin: 10px;
 }
 
-.header-container {
-  height: 90vh;
+.about-container {
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 50px;
 }
 
 .profile-pic {
@@ -50,7 +52,12 @@ nav li {
   margin-bottom: 40px;
 }
 
-.header-container p {
+.about-container h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about-container p {
   font-size: 18px;
   max-width: 600px;
   margin-bottom: 40px;
@@ -64,12 +71,12 @@ nav li {
 }
 
 .skills-container {
-  height: 40vh;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 650px;
+  max-width: 600px;
 }
 
 .skills-container ul {
@@ -94,20 +101,12 @@ nav li {
 }
 
 .projects-container h2 {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .projects-container img {
   max-width: 400px;
   height: auto;
-}
-
-.projects-container p {
-  font-size: 18px;
-}
-
-.project {
-  border: #e7e6e4 solid 1px;
 }
 
 .project a {
@@ -131,7 +130,7 @@ nav li {
 }
 
 .links {
-  margin: 50px 0;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -147,18 +146,45 @@ nav li {
   width: 50px;
 }
 
+footer {
+  background-color: #f0f0ee;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
 @media screen and (max-width: 450px) {
   nav li {
     padding: 10px 5px;
     margin: 10px 5px;
   }
 
-  .skills-container {
-    height: 55vh;
+  .project-img {
+    width: 50px;
+    height: auto;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .skills-container h2 {
+    margin-top: 30px;
+  }
+
+  .skills-container ul {
+    margin-bottom: 30px;
   }
 
   .project-text p,
-  .project-text h3 {
-    margin: 0 20px 20px;
+  .project-text h3,
+  .about-container p {
+    margin: 0 30px 20px;
   }
 }
