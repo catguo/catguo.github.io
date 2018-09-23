@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background-color: #f0f0ee;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -39,6 +39,12 @@ nav li {
   margin: 10px;
 }
 
+.project-text p,
+.project-text h3,
+.about-container p {
+  margin: 0 30px 20px;
+}
+
 .about-container {
   min-height: 90vh;
   display: flex;
@@ -49,7 +55,7 @@ nav li {
 
 .profile-pic {
   max-width: 300px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .about-container h1 {
@@ -165,13 +171,8 @@ footer p {
     margin: 10px 5px;
   }
 
-  .project-img {
-    width: 50px;
-    height: auto;
-  }
-
-  .project-text {
-    width: 100%;
+  .project-img img {
+    width: 95%;
   }
 
   .skills-container h2 {
@@ -180,11 +181,5 @@ footer p {
 
   .skills-container ul {
     margin-bottom: 30px;
-  }
-
-  .project-text p,
-  .project-text h3,
-  .about-container p {
-    margin: 0 30px 20px;
   }
 }
