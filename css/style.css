@@ -79,11 +79,12 @@ nav li {
 
 .skills-container {
   min-height: 380px;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 .skills-container ul {
@@ -102,7 +103,7 @@ nav li {
 }
 
 .projects-container {
-  width: 100%;
+  margin: 0 3%;
   text-align: center;
   padding: 0;
 }
